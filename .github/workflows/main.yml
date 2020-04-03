@@ -24,4 +24,4 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: bundle exec fastlane build_lane
+      run: bundle install && bundle exec fastlane build_lane
