@@ -13,7 +13,18 @@
 		CF87CCC42437547B003F4042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF87CCC32437547B003F4042 /* Assets.xcassets */; };
 		CF87CCC72437547B003F4042 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF87CCC62437547B003F4042 /* Preview Assets.xcassets */; };
 		CF87CCCA2437547B003F4042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF87CCC82437547B003F4042 /* LaunchScreen.storyboard */; };
+		CF87CCD8243763B5003F4042 /* GitHubActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF87CCD7243763B5003F4042 /* GitHubActionsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF87CCDA243763B5003F4042 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF87CCB22437547A003F4042 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF87CCB92437547A003F4042;
+			remoteInfo = GitHubActions;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CF87CCBA2437547A003F4042 /* GitHubActions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubActions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		CF87CCC62437547B003F4042 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF87CCC92437547B003F4042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF87CCCB2437547B003F4042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF87CCD5243763B5003F4042 /* GitHubActionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubActionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF87CCD7243763B5003F4042 /* GitHubActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubActionsTests.swift; sourceTree = "<group>"; };
+		CF87CCD9243763B5003F4042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CF87CCB72437547A003F4042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF87CCD2243763B5003F4042 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				CF87CCBC2437547A003F4042 /* GitHubActions */,
+				CF87CCD6243763B5003F4042 /* GitHubActionsTests */,
 				CF87CCBB2437547A003F4042 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				CF87CCBA2437547A003F4042 /* GitHubActions.app */,
+				CF87CCD5243763B5003F4042 /* GitHubActionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +98,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CF87CCD6243763B5003F4042 /* GitHubActionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF87CCD7243763B5003F4042 /* GitHubActionsTests.swift */,
+				CF87CCD9243763B5003F4042 /* Info.plist */,
+			);
+			path = GitHubActionsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +127,24 @@
 			productReference = CF87CCBA2437547A003F4042 /* GitHubActions.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CF87CCD4243763B5003F4042 /* GitHubActionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF87CCDC243763B5003F4042 /* Build configuration list for PBXNativeTarget "GitHubActionsTests" */;
+			buildPhases = (
+				CF87CCD1243763B5003F4042 /* Sources */,
+				CF87CCD2243763B5003F4042 /* Frameworks */,
+				CF87CCD3243763B5003F4042 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF87CCDB243763B5003F4042 /* PBXTargetDependency */,
+			);
+			name = GitHubActionsTests;
+			productName = GitHubActionsTests;
+			productReference = CF87CCD5243763B5003F4042 /* GitHubActionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +157,10 @@
 				TargetAttributes = {
 					CF87CCB92437547A003F4042 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					CF87CCD4243763B5003F4042 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CF87CCB92437547A003F4042;
 					};
 				};
 			};
@@ -124,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				CF87CCB92437547A003F4042 /* GitHubActions */,
+				CF87CCD4243763B5003F4042 /* GitHubActionsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +191,13 @@
 				CF87CCCA2437547B003F4042 /* LaunchScreen.storyboard in Resources */,
 				CF87CCC72437547B003F4042 /* Preview Assets.xcassets in Resources */,
 				CF87CCC42437547B003F4042 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF87CCD3243763B5003F4042 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +214,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF87CCD1243763B5003F4042 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF87CCD8243763B5003F4042 /* GitHubActionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF87CCDB243763B5003F4042 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF87CCB92437547A003F4042 /* GitHubActions */;
+			targetProxy = CF87CCDA243763B5003F4042 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CF87CCC82437547B003F4042 /* LaunchScreen.storyboard */ = {
@@ -320,6 +398,46 @@
 			};
 			name = Release;
 		};
+		CF87CCDD243763B5003F4042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCUE9ER94C;
+				INFOPLIST_FILE = GitHubActionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.daveburrowz.GitHubActionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubActions.app/GitHubActions";
+			};
+			name = Debug;
+		};
+		CF87CCDE243763B5003F4042 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCUE9ER94C;
+				INFOPLIST_FILE = GitHubActionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.daveburrowz.GitHubActionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubActions.app/GitHubActions";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +455,15 @@
 			buildConfigurations = (
 				CF87CCCF2437547B003F4042 /* Debug */,
 				CF87CCD02437547B003F4042 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF87CCDC243763B5003F4042 /* Build configuration list for PBXNativeTarget "GitHubActionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF87CCDD243763B5003F4042 /* Debug */,
+				CF87CCDE243763B5003F4042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

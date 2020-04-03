@@ -24,4 +24,16 @@ platform :ios do
     clean: true
   )
   end
+
+  lane :tests do
+    scan(
+      clean: true,
+      scheme: "GitHubActions",
+      configuration: "Debug",
+      devices: ["iPhone 11"],
+      output_types: 'junit',
+      output_directory: "./fastlane/test_output",
+      code_coverage: true
+    )
+  end
 end
