@@ -23,6 +23,6 @@ class GitHubActionsTests: XCTestCase {
     }
 
     func testExampleTwo() {
-        XCTAssert(true)
+        XCTAssert(false)
     }
 }
